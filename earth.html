@@ -1,0 +1,228 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Earth | Explore the Universe</title>
+</head>
+
+<body>
+
+    <!-- Language Selector -->
+    <div class="language-box">
+        <label for="language">🌐 Language:</label>
+
+        <select id="language" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="ur">اردو</option>
+            <option value="fa">فارسی</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="pt">Português</option>
+        </select>
+    </div>
+
+
+    <div class="planet-page">
+
+        <a href="planets.html" class="back-btn">
+            ← Back to Planets
+        </a>
+
+
+        <!-- Earth Header -->
+
+        <div class="planet-icon">
+            🌍
+        </div>
+
+        <h1 id="title">
+            Earth
+        </h1>
+
+        <p id="subtitle" class="subtitle">
+            Our home planet
+        </p>
+
+
+        <!-- Earth Image -->
+
+        <div class="earth-image">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"
+                alt="Planet Earth">
+        </div>
+
+
+        <!-- About Earth -->
+
+        <section class="information">
+
+            <h2 id="about-title">
+                🌎 About Earth
+            </h2>
+
+            <p id="about-text">
+                Earth is the third planet from the Sun and the only known planet
+                where life exists. It has liquid water, an atmosphere rich in
+                nitrogen and oxygen, and a wide variety of ecosystems.
+            </p>
+
+        </section>
+
+
+        <!-- Basic Facts -->
+
+        <h2 id="facts-title">
+            🔭 Earth Facts
+        </h2>
+
+        <div class="info-card-container">
+
+            <div class="info-card">
+                <h3>☀️ Distance from Sun</h3>
+                <p>About 150 million km</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🌙 Moon</h3>
+                <p>Earth has 1 natural moon.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🌡️ Average Temperature</h3>
+                <p>About 15°C</p>
+            </div>
+
+            <div class="info-card">
+                <h3>⏱️ Length of a Day</h3>
+                <p>About 24 hours</p>
+            </div>
+
+        </div>
+
+
+        <!-- Timeline -->
+
+        <section class="timeline">
+
+            <h2 id="history-title">
+                🕰️ Earth Before Humans
+            </h2>
+
+            <div class="timeline-item">
+                <span>🌋</span>
+
+                <div>
+                    <h3>About 4.5 billion years ago</h3>
+
+                    <p>
+                        Earth formed from material surrounding the young Sun.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <span>🌊</span>
+
+                <div>
+                    <h3>Early Earth</h3>
+
+                    <p>
+                        Earth cooled over time and oceans eventually formed.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <span>🦠</span>
+
+                <div>
+                    <h3>Early Life</h3>
+
+                    <p>
+                        Simple forms of life appeared billions of years ago.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <span>🦖</span>
+
+                <div>
+                    <h3>Age of Dinosaurs</h3>
+
+                    <p>
+                        Dinosaurs lived on Earth for millions of years before
+                        modern humans existed.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <span>🧑</span>
+
+                <div>
+                    <h3>Humans</h3>
+
+                    <p>
+                        Modern humans appeared very recently compared with
+                        Earth's enormous history.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Fun Facts -->
+
+        <section class="information">
+
+            <h2 id="fun-title">
+                ✨ Interesting Facts
+            </h2>
+
+            <ul id="fun-facts">
+
+                <li>
+                    About 71% of Earth's surface is covered by water.
+                </li>
+
+                <li>
+                    Earth has one natural satellite, the Moon.
+                </li>
+
+                <li>
+                    Earth is currently the only world known to support life.
+                </li>
+
+                <li>
+                    Earth's atmosphere helps protect life from harmful radiation.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <a href="planets.html" class="back-btn bottom-btn">
+            ← Explore Other Planets
+        </a>
+
+    </div>
+
+
+    <script src="earth.js"></script>
+
+</body>
+
+</html>
