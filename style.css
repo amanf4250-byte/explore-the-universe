@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,21 +6,72 @@
 
 body {
     min-height: 100vh;
-    background: #050816;
-    color: white;
     font-family: Arial, sans-serif;
+    color: white;
+    background: radial-gradient(circle at top, #18245c, #070b22 45%, #02030d);
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+    background-size: 90px 90px, 140px 140px;
+    background-position: 20px 30px, 70px 80px;
+    opacity: 0.5;
+    animation: stars 8s linear infinite;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 65px;
     margin-bottom: 20px;
+    text-shadow: 0 0 25px #7289ff;
 }
 
 p {
     font-size: 20px;
-    color: #b8c1ff;
+    color: #cbd2ff;
+    margin-bottom: 35px;
+}
+
+button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #090d2a;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #ffffff;
+}
+
+@keyframes stars {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(40px);
+    }
 }
